@@ -24,11 +24,12 @@ def assign_rooms(array)
 end
 
 #printer array
-def printer(speakers)
- batch_badge_creator(speakers).each do |badge|
-  puts badge
- end
- assign_rooms(speakers).each do |assignment|
-  puts assignment
- end
-end
+def printer(array)
+  batch_badge_creator(array).each do |id|
+    puts id
+  end 
+  
+  assign_rooms(array).each do |id|
+    puts id 
+  end
+end 
